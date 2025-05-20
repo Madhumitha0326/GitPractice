@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-18T17:55:18 IST" name="Default suite" finished-at="2025-03-18T17:55:31 IST" duration-ms="12407">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:fire.runnerFile@431cd9b2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-03-18T17:55:18 IST" name="Default test" finished-at="2025-03-18T17:55:31 IST" duration-ms="12407">
+      <class name="fire.runnerFile">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:fire.runnerFile@431cd9b2]" started-at="2025-03-18T17:55:18 IST" name="setUpClass" finished-at="2025-03-18T17:55:20 IST" duration-ms="2161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@74d3b638]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:fire.runnerFile@431cd9b2]" started-at="2025-03-18T17:55:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-18T17:55:30 IST" duration-ms="9979" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Generate the Sompo Fire Cover note."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Signup functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream
+at pages.PrivacyPage.privacyWindow(PrivacyPage.java:34)
+at fire.StepDefinition.the_user_is_on_the_login_page(StepDefinition.java:52)
+at ✽.the user is on the login page "10002002" "Kgisl@123456"(file:///D:/Program/Fire/src/test/resources/features.feature:5)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:fire.runnerFile@431cd9b2]" started-at="2025-03-18T17:55:30 IST" name="tearDownClass" finished-at="2025-03-18T17:55:31 IST" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- fire.runnerFile -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

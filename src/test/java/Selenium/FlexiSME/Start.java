@@ -37,6 +37,7 @@ public class Start {
 		Boolean crossSellingAlertAvailable = crossSellingAlert.isDisplayed();
 		if(crossSellingAlertAvailable) {
 			driver.findElement(By.id("popup_ok"));
+			System.out.println("Git Practice");
 		}
 		else {
 			driver.quit();
